@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+.init{/*初始状态*/
+	background-color:#CCCCCC;
+	border:none;
+	height:30px;
+	width:200px;
+	border-radius:5px;
+	font-size:15px;
+	}
+.right{
+	background-color:#CCCCCC;
+	border:none;
+	height:30px;
+	width:200px;
+	border-radius:5px;
+	font-size:15px;
+	color:#0033FF;
+	}
+.wrong{
+    background-color:#CCCCCC;
+	border:none;
+	height:30px;
+	width:200px;
+	border-radius:5px;
+	font-size:15px;
+	color:#FF0000;
+	}
+
+table{
+	font-weight:bold;
+    }
+

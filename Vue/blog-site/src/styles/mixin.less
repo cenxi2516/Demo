@@ -1,0 +1,24 @@
+.self-centered(@type: absolute) {
+    position: @type;
+    top: 50%;
+    left: 50%;
+    transform+: translate(-50%, -50%);
+}
+
+.self-x-centered(@type: absolute) {
+    position: @type;
+    left: 50%;
+    transform+: translateX(-50%);
+}
+
+.self-y-centered(@type: absolute) {
+    position: @type;
+    top: 50%;
+    transform+: translateY(-50%);
+}
+
+.single-text-ellipsis() {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

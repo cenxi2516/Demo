@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .form {
+        	width: 200px;
+        	margin: 0 auto;
+      	}
+
+      	.item {
+        	margin: 1em 0;
+      	}
+
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <div class="item">
+            <label>姓名</label>
+            <input type="text" name="uname" />
+        </div>
+        <div class="item">
+            <label>年龄</label>
+            <input type="number" name="uage" />
+        </div>
+        <div class="item">
+            <label>性别</label>
+            <label>
+                <input name="ugender" type="radio" value="1" />
+                男
+            </label>
+            <label>
+                <input name="ugender" type="radio" value="0" />
+                女
+            </label>
+        </div>
+    </div>
+    <script>
+        // 填写表单时，保存数据到本地
+        const inputs = document.querySelectorAll('input');
+        const backfill = () => {
+            inputs.forEach(input => {
+                const value = localStorage.getItem(input.name);
+                switch (input.type) {
+                    case 'text':
+                    case 'number':
+                        input.value = value;
+                        break;
+                    case 'radio':
+                        if (input.value === value) {
+                            input.checked = true;
+                        }
+                        break;
+                }
+            });
+        };
+
+        inputs.forEach(input => {
+            input.addEventListener('change', (e) => {
+                const dom = e.target;
+                localStorage.setItem(dom.name, dom.value);
+            })
+        });
+
+        // 打开页面时，从本地加载数据到表单
+        backfill();
+    </script>
+</body>
+
+</html>

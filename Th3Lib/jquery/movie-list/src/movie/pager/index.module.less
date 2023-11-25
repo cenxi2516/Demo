@@ -1,0 +1,30 @@
+@normal-color: #4cb1f5;
+@active-color: #f40;
+@disabled-color: #ccc;
+
+.page-btn-status(@color: @normal-color, @cursor: pointer) {
+    color: @color;
+    cursor: @cursor;
+    margin: 0 7px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    font-size: 14px;
+    user-select: none;
+
+    .normal {
+        .page-btn-status();
+    }
+
+    .active {
+        .page-btn-status(@active-color, @cursor: auto);
+    }
+
+    .disabled {
+        .page-btn-status(@disabled-color, @cursor: not-allowed);
+    }
+}

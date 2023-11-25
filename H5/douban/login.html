@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="shortcut icon" type="images/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="./css/login.css">
+    <base target="_blank">
+</head>
+
+<body>
+    <div class="account-wrapper">
+        <!-- 扫码登录 与 短信登录/注册 切换开始 -->
+        <div class="account-tab-switch">
+            <div class="qrcode-tab active">
+                <div class="dt"></div>
+                <div class="dd">扫码登录</div>
+            </div>
+            <div class="msg-tab">
+                <div class="dt"></div>
+                <div class="dd">短信登录/注册</div>
+            </div>
+        </div>
+        <!-- 扫码登录 与 短信登录/注册 切换结束 -->
+        <!-- 短信登录/注册开始 -->
+        <div class="account-nums-wrap show">
+            <!-- 短信登录/注册 与 密码登录 开始 -->
+            <div class="account-nums-tab">
+                <!-- 短信登录/注册 与 密码登录 切换 开始 -->
+                <div class="login-tab-switch clearfix">
+                    <div class="tab-item fl active">短信登录／注册</div>
+                    <div class="tab-item fl">密码登录</div>
+                </div>
+                <!-- 短信登录/注册 与 密码登录 切换 结束 -->
+                <!-- 短信登录/注册开始 -->
+                <div class="account-nums-form account-nums-msg show">
+                    <div class="account-form-tips">
+                        请仔细阅读
+                        <a href="https://accounts.douban.com/passport/agreement?hide_accept=1" class="link use-protocol not-hover">豆瓣使用协议、豆瓣个人信息保护政策</a>
+                    </div>
+                    <div class="account-form-item">
+                        <input class="account-form-input tel-num" type="tel" name="phone-num" placeholder="手机号" autocomplete="off">
+                        <div class="select-tel-area curr-local-num">+86</div>
+                    </div>
+                    <div class="account-form-item">
+                        <input class="account-form-input verify-code" type="text" placeholder="验证码" autocomplete="off">
+                        <a href="javascript: void(0);" target="_self" class="get-code link not-hover">获取验证码</a>
+                    </div>
+                    <div class="account-form-item">
+                        <button disabled class="account-form-btn" type="button">登录豆瓣</button>
+                    </div>
+                    <div class="account-form-ft txt-right">
+                        <a href="https://help.douban.com/account?app=1#t1-q5" class="link help-link not-hover">收不到验证码</a>
+                    </div>
+                </div>
+                <!-- 短信登录/注册结束 -->
+                <!-- 密码登录开始 -->
+                <div class="account-nums-form account-nums-pwd hide">
+                    <div class="account-form-tips txt-right"><a href="https://accounts.douban.com/passport/get_password" class="link find-pwd not-hover">找回密码</a></div>
+                    <div class="account-form-item">
+                        <input class="account-form-input" type="text" name="phone-num" placeholder="手机号 / 邮箱">
+                    </div>
+                    <div class="account-form-item">
+                        <input class="account-form-input" type="password" placeholder="密码" autocomplete="off">
+                    </div>
+                    <div class="account-form-item">
+                        <button disabled class="account-form-btn" type="button">登录豆瓣</button>
+                    </div>
+                    <div class="account-form-ft txt-right">
+                        <a href="javascript: void(0);" target="_self" class="link login-link not-hover">海外手机登录</a>
+                    </div>
+                </div>
+                <!-- 密码登录结束 -->
+            </div>
+            <!-- 短信登录/注册 与 密码登录 结束 -->
+            <!-- 第三方登录开始 -->
+            <div class="third-login">
+                第三方登录:
+                <a href="" target="_top" class="iconfont icon-weixinmw not-hover"></a>
+                <a href="" target="_top" class="iconfont icon-weibo not-hover"></a>
+            </div>
+            <!-- 第三方登录结束 -->
+        </div>
+        <!-- 短信登录/注册结束 -->
+        <!-- 扫码登录开始 -->
+        <div class="account-qrcode-wrap txt-center hide">
+            <div class="login-tab-switch clearfix">
+                <div class="tab-item fl active">二维码登录</div>
+            </div>
+            <div class="account-qrcode-img">
+                <img class="qrcode-img" src="./images/douban-qrlogin.png" alt="扫码登录">
+            </div>
+            <div class="account-qrcode-tips">
+                请打开豆瓣 App 扫一扫 或
+                <a href="" class="link msg-verify-login not-hover">短信登录验证</a>
+            </div>
+        </div>
+        <!-- 扫码登录结束 -->
+    </div>
+    <div class="select-area-code-modal hide">
+        <div class="select-area-code-wrapper">
+            <div class="select-area-code-title">选择国际区号</div>
+            <div class="select-area-code-close-btn">×</div>
+            <div class="select-area-code-scroll">
+                <ul class="select-area-code-list">
+                    <li class="select-area-code-list-item active">
+                        <span class="dt">
+                            中国大陆
+                        </span>
+                        <span class="dd">+86</span>
+                    </li>
+                    <li class="select-area-code-list-item">
+                        <span class="dt">中国香港</span>
+                        <span class="dd">+852</span>
+                    </li>
+                    <li class="select-area-code-list-item">
+                        <span class="dt">中国澳门</span>
+                        <span class="dd">+853</span>
+                    </li>
+                    <li class="select-area-code-list-item">
+                        <span class="dt">中国台湾</span>
+                        <span class="dd">+866</span>
+                    </li>
+                    <li class="select-area-code-list-item">
+                        <span class="dt">日本</span>
+                        <span class="dd">+81</span>
+                    </li>
+                    <li class="select-area-code-list-item">
+                        <span class="dt">韩国</span>
+                        <span class="dd">+82</span>
+                    </li>
+                    <li class="select-area-code-list-item">
+                        <span class="dt">新加坡</span>
+                        <span class="dd">+65</span>
+                    </li>
+                    <li class="select-area-code-list-item">
+                        <span class="dt">泰国</span>
+                        <span class="dd">+66</span>
+                    </li>
+                    <li class="select-area-code-list-item">
+                        <span class="dt">马来西亚</span>
+                        <span class="dd">+60</span>
+                    </li>
+                    <li class="select-area-code-list-item">
+                        <span class="dt">美国</span>
+                        <span class="dd">+1</span>
+                    </li>
+                    <li class="select-area-code-list-item">
+                        <span class="dt">加拿大</span>
+                        <span class="dd">+1</span>
+                    </li>
+                    <li class="select-area-code-list-item">
+                        <span class="dt">印度尼西亚</span>
+                        <span class="dd">+62</span>
+                    </li>
+                    <li class="select-area-code-list-item">
+                        <span class="dt">越南</span>
+                        <span class="dd">+84</span>
+                    </li>
+                    <li class="select-area-code-list-item">
+                        <span class="dt">阿联酋</span>
+                        <span class="dd">+97</span>
+                    </li>
+                    <li class="select-area-code-list-item">
+                        <span class="dt">中国香港</span>
+                        <span class="dd">+852</span>
+                    </li>
+                    <li class="select-area-code-list-item">
+                        <span class="dt">中国澳门</span>
+                        <span class="dd">+853</span>
+                    </li>
+                    <li class="select-area-code-list-item">
+                        <span class="dt">中国台湾</span>
+                        <span class="dd">+866</span>
+                    </li>
+                    <li class="select-area-code-list-item">
+                        <span class="dt">马来西亚</span>
+                        <span class="dd">+60</span>
+                    </li>
+                    <li class="select-area-code-list-item">
+                        <span class="dt">美国</span>
+                        <span class="dd">+1</span>
+                    </li>
+                    <li class="select-area-code-list-item">
+                        <span class="dt">加拿大</span>
+                        <span class="dd">+1</span>
+                    </li>
+                    <li class="select-area-code-list-item">
+                        <span class="dt">印度尼西亚</span>
+                        <span class="dd">+62</span>
+                    </li>
+                    <li class="select-area-code-list-item">
+                        <span class="dt">越南</span>
+                        <span class="dd">+84</span>
+                    </li>
+                    <li class="select-area-code-list-item">
+                        <span class="dt">日本</span>
+                        <span class="dd">+81</span>
+                    </li>
+                    <li class="select-area-code-list-item">
+                        <span class="dt">韩国</span>
+                        <span class="dd">+82</span>
+                    </li>
+                    <li class="select-area-code-list-item">
+                        <span class="dt">新加坡</span>
+                        <span class="dd">+65</span>
+                    </li>
+                    <li class="select-area-code-list-item">
+                        <span class="dt">泰国</span>
+                        <span class="dd">+66</span>
+                    </li>
+                    <li class="select-area-code-list-item">
+                        <span class="dt">马来西亚</span>
+                        <span class="dd">+60</span>
+                    </li>
+                    <li class="select-area-code-list-item">
+                        <span class="dt">美国</span>
+                        <span class="dd">+1</span>
+                    </li>
+                    <li class="select-area-code-list-item">
+                        <span class="dt">加拿大</span>
+                        <span class="dd">+1</span>
+                    </li>
+                    <li class="select-area-code-list-item">
+                        <span class="dt">印度尼西亚</span>
+                        <span class="dd">+62</span>
+                    </li>
+                    <li class="select-area-code-list-item">
+                        <span class="dt">越南</span>
+                        <span class="dd">+84</span>
+                    </li>
+                    <li class="select-area-code-list-item">
+                        <span class="dt">阿联酋</span>
+                        <span class="dd">+97</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

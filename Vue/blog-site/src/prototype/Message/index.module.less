@@ -1,0 +1,29 @@
+@import '~@/styles/mixin.less';
+@import '~@/styles/var.less';
+
+.message {
+    .self-centered();
+    max-width: 40%;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: .5s;
+
+    &-info {
+        background-color: @primary;
+    }
+
+    &-warn {
+        background-color: @warn;
+    }
+
+    &-error {
+        background-color: @danger;
+    }
+
+    &-success {
+        background-color: @success;
+    }
+}

@@ -1,0 +1,156 @@
+/*content*/
+.banner603 {
+    position: relative;
+}
+.banner603 a {
+    position: absolute;
+    width: 100%;
+    height: 465px;
+    text-indent: -999em;
+    background: url("../images/banner.jpg") no-repeat center top;
+}
+.main {
+    padding-top: 12px;
+    position: relative;
+}
+.main-slider {
+    width: 730px;
+    height: 453px;
+    padding: 0 10px 0 220px;
+    position: relative;
+}
+.main-slider a {
+    display: block;
+    height: 453px;
+    overflow: hidden;
+    position: relative;
+}
+.main-slider ul {
+    position: absolute;
+    bottom: 8px;
+    left: 585px;
+    margin-left: -66px;
+}
+.main-slider li {
+    float: left;
+    width: 18px;
+    line-height: 18px;
+    margin-right: 4px;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #3e3e3e;
+    cursor: pointer;
+}
+.main-slider .current {
+    background-color: #B61B1F;
+}
+.arrow-l, .arrow-r {
+    position: absolute;
+    top: 50%;
+    margin-top: -31px;
+    width: 28px;
+    text-align: center;
+    color: #fff;
+    font: 500 18px/62px "SimSun";
+    background: rgba(0,0,0,.2);
+}
+.arrow-l:hover, .arrow-r:hover{
+    background: rgba(0,0,0,.3);
+    cursor: pointer;
+}
+.arrow-l {
+    left: 220px;
+}
+.arrow-r {
+    right: 10px;
+}
+.main-news {
+    width: 248px;
+    height: 451px;
+    border: 1px solid #e4e4e4;
+}
+.quick-news {
+    height: 200px;
+    border-bottom: 1px dashed #e4e4e4;
+}
+.quick-news .dt, .life-sevices .dt{
+    height: 43px;
+    padding: 0 15px;
+    font: 14px/43px "Microsoft YaHei";
+    border-bottom: 1px dotted #e4e4e4;
+}
+.quick-news .dt h3 {
+    float: left;
+}
+.quick-news .dt a {
+    float: right;
+    font: 13px/43px "SimSun";
+}
+.quick-news .dd {
+    height: 140px;
+    padding: 16px 0 0 15px;
+}
+.quick-news li {
+    height: 28px;
+}
+.quick-news li span {
+    font-weight: 700;
+    margin-right: 5px;
+}
+.life-sevices .dd{
+    height: 206px;
+    width: 248px;
+    overflow: hidden;
+}
+.life-sevices li {
+    float: left;
+    width: 62px;
+    height: 70px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    margin-left: -1px;
+    position: relative;
+}
+.life-sevices li a {
+    display: block;
+    height: 26px;
+    padding-top: 44px;
+    text-align: center;
+}
+.life-sevices li s {
+    position: absolute;
+    top: 12px;
+    left: 18px;
+    width: 25px;
+    height: 25px;
+    background: url("../images/icon_lifeserv.png") no-repeat right 0;
+}
+.life-sevices .present {
+    background: url("../images/song.png") no-repeat right top;
+}
+.life-sevices .free {
+    background: url("../images/mian.png") no-repeat right top;
+}
+.jd-active {
+    height: 150px;
+    margin-top: 10px;
+}
+.active-info a {
+    display: block;
+    width: 210px;
+    height: 150px;
+}
+.active-list {
+    width: 1000px;
+    height: 150px;
+    position: relative;
+}
+.active-list ul {
+    width: 1004px;
+    position: absolute;
+}
+.active-list li {
+    float: left;
+    margin-right: 1px;
+}

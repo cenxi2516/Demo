@@ -1,0 +1,45 @@
+@charset"UTF-8";
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+	padding: 0;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+	color: #7c7c7c;
+}
+ul {
+	list-style: none;
+}
+img {
+	border: none;
+	_border: 1px solid none;
+	vertical-align: top;
+}
+.clearfix::before, .clearfix::after {
+	content: "";
+	display: table;
+}
+.clearfix::after {
+	clear: both;
+}
+.clearfix {
+	_zoom: 1;
+}
+.fr {
+	float: right;
+}
+.fl {
+	float: left;
+}
+.font45 {
+	font-size: 45px;
+}
+.cgray {
+	color: #bcbcbb;
+}
+.font20 {
+	font-size: 20px;
+}
+.alignc {
+	text-align: center;
+}

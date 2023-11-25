@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            color: #666;
+            text-align: center;
+        }
+
+        .box {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 30px;
+            height: 30px;
+            background: #f40;
+            border-radius: 50%;
+            transition: .5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="ball" class="box"></div>
+    <p>在屏幕上点击任意位置试一试</p>
+    <p>此效果需要用到JS</p>
+    <script>
+        const oBall = document.getElementById('ball');
+        window.addEventListener('click', (e) => {
+            const {
+                clientX,
+                clientY
+            } = e;
+
+            oBall.style.transform = `translate(${clientX}px,${clientY}px)`;
+        });
+    </script>
+</body>
+
+</html>

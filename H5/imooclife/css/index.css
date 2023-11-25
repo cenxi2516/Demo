@@ -1,0 +1,138 @@
+@charset"UTF-8";
+
+body {
+	height: 999px;
+}
+#header {
+	height: 80px;
+	padding: 11px 74px 9px 153px;
+	background: #fff;
+}
+.nav li {
+	float: right;
+	width: 80px;
+	line-height: 80px;
+}
+#banner {
+	height: 600px;
+	position: relative;
+}
+.banner-img img {
+	width: 100%;
+	height: 600px;
+
+}
+.toplayout {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #000;
+	opacity: 0.5;
+	filter: alpha(opacity=500);
+}
+.but {
+	position: absolute;
+	top: 250px;
+	left: 50%;
+	margin-left: -250px;
+	width: 500px;
+	height: 300px;
+	text-align: center;
+}
+.but span {
+	color: #fff;
+}
+.but a {
+	display: block;
+	width: 196px;
+	line-height: 56px;
+	border: 2px solid #fff;
+	border-radius: 8px;
+	background: #f46f4f;
+	margin:50px auto 0 auto;
+	color: #fff;
+}
+.wc {
+	width: 996px;
+	margin: 0 197px 0 185px;
+}
+#main {
+	padding: 50px 0 30px 0;
+}
+.concat {
+	padding: 0 93px 55px 106px;
+}
+.concat p {
+	float: left;
+	height: 150px;
+	margin-right: 233px;
+	text-align: center;
+}
+.concat p.last {
+	margin-right: 0;
+}
+.concat img {
+	 padding-bottom: 27px;
+	 height: 100px;
+}
+.concat a, .concat img {
+	display: block;
+	width: 100px;
+}
+.record-img h2 {
+	width: 996px;
+	margin-bottom: 30px;
+	color: #e09695;
+	text-align: center;
+}
+.record-img li a {
+	float: left;
+	margin-right: 20px;
+	text-align: center;
+	width: 311px;
+}
+.record-img li img {
+	display: block;
+	width: 100%;
+	height: 260px;
+	padding-bottom: 20px;
+}
+.record-img li p {
+	height: 32px;
+	font: 700 20px Microsoft YaHei;
+
+}
+.record-img li a.last {
+	margin-right: 0;
+}
+.photo-img {
+	height: 797px;
+	background: #f8f8f8;
+	color: #7c7d7f;
+}
+.photo-img h2 {
+	padding: 52px 0;
+}
+.photo-img li {
+	width: 470px;
+}
+.photo-img li a, .photo-img li img {
+	display: block;
+	width: 100%;
+}
+.photo-img li img {
+	padding-bottom: 24px;
+	height: 480px;
+}
+.photo-img li p {
+	font: 600 20px/28px Microsoft YaHei;
+}
+#footer {
+	line-height: 30px;
+	padding: 35px 0;
+	background: #282b34;
+	color: #fff;
+	font-size: 16px;
+}

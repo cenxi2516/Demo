@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" />
+    <title>学成网</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <style type="text/css">
+    </style>
+</head>
+
+<body>
+    <!-- header-start -->
+    <header>
+        <nav>
+            <!-- logo部分 -->
+            <div class="logo fl">
+                <h1 class="sprite-bg">学成在线</h1>
+            </div>
+            <!-- 导航栏部分 -->
+            <div class="navbar fl">
+                <ul>
+                    <li><a href="#" class="current">首页</a></li>
+                    <li><a href="#">课程</a></li>
+                    <li><a href="#">职业规划</a></li>
+                </ul>
+            </div>
+            <!-- 个人中心部分 -->
+            <div class="person fr">
+                <div class="p-center fl">
+                    <a href="#">个人中心</a>
+                </div>
+                <div class="p-tips fl">
+                    <span class="sprite-icon"><i class="sprite-icon tips-mark"></i></span>
+                </div>
+                <div class="p-informs fl">
+                    <img class="h-face" src="./images/hface.png" width="30px" height="30px" alt="">
+                    <span class="u-name">qq-leishui</span>
+                </div>
+            </div>
+            <!-- 搜索框部分 -->
+            <div class="search fr">
+                <form action="">
+                    <input type="text" name="word" id="word" value="输入关键字" />
+                    <input type="submit" class="sprite-icon" value="" />
+                </form>
+            </div>
+        </nav>
+    </header>
+    <!-- header-end -->
+    <!-- banner-start -->
+    <div class="banner">
+        <div class="container bcontent">
+            <!-- 轮播图 -->
+            <div class="slider">
+                <div class="scontent">
+                    <ul>
+                        <li><a href="#"><img src="images/banner.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/banner.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/banner.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/banner.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/banner.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/banner.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="sctrl">
+                    <ul>
+                        <li class="current">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 侧边栏导航 -->
+            <div class="asider">
+                <ul>
+                    <li>
+                        <div class="ctitle">
+                            <h2>前端开发</h2>
+                        </div>
+                        <div class="ccontent"></div>
+                    </li>
+                    <li>
+                        <div class="ctitle">
+                            <h2>后端开发</h2>
+                        </div>
+                        <div class="ccontent"></div>
+                    </li>
+                    <li>
+                        <div class="ctitle">
+                            <h2>移动开发</h2>
+                        </div>
+                        <div class="ccontent"></div>
+                    </li>
+                    <li>
+                        <div class="ctitle">
+                            <h2>人工智能</h2>
+                        </div>
+                        <div class="ccontent"></div>
+                    </li>
+                    <li>
+                        <div class="ctitle">
+                            <h2>商业预测</h2>
+                        </div>
+                        <div class="ccontent"></div>
+                    </li>
+                    <li>
+                        <div class="ctitle">
+                            <h2>云计算&大数据</h2>
+                        </div>
+                        <div class="ccontent"></div>
+                    </li>
+                    <li>
+                        <div class="ctitle">
+                            <h2>运维&从测试</h2>
+                        </div>
+                        <div class="ccontent"></div>
+                    </li>
+                    <li>
+                        <div class="ctitle">
+                            <h2>UI设计</h2>
+                        </div>
+                        <div class="ccontent"></div>
+                    </li>
+                    <li>
+                        <div class="ctitle">
+                            <h2>产品</h2>
+                        </div>
+                        <div class="ccontent"></div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 课程表 -->
+            <div class="ctable">
+                <div class="mctitle">
+                    <h3>我的课程表</h3>
+                </div>
+                <div class="clist">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <p class="dt">继续学习&nbsp;程序语言设计</p>
+                                <p class="dd">正在学习-使用对象</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="dt">继续学习&nbsp;程序语言设计</p>
+                                <p class="dd">正在学习-使用对象</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="current">
+                                <p class="dt">继续学习&nbsp;程序语言设计</p>
+                                <p class="dd">正在学习-使用对象</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cbtn">
+                    <a href="javascript:void(0);">全部课程</a>
+                </div>
+            </div>
+            <!-- 未登录状态 -->
+            <div class="nologin"></div>
+        </div>
+    </div>
+    <!-- banner-end -->
+    <!-- 精品推荐-start -->
+    <div class="recommend container">
+        <!-- 精品推荐-兴趣 -->
+        <div class="rtitle clearfix">
+            <div class="dt fl">
+                <span>精品推荐</span>
+            </div>
+            <div class="dd fl">
+                <ul>
+                    <li><a href="#">JQuery</a></li>
+                    <li><a href="#">Spark</a></li>
+                    <li><a href="#">MySQL</a></li>
+                    <li><a href="#">JavaWeb</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">SqlSercer</a></li>
+                </ul>
+            </div>
+            <div class="rbtn fr"><a href="javascript:void(0);">修改兴趣</a></div>
+        </div>
+        <!-- 精品推荐-列表 -->
+        <div class="rcontent">
+            <div class="ctitle clearfix">
+                <h3 class="ltitle">精品推荐</h3>
+                <a class="lall" href="#">查看全部</a>
+            </div>
+            <div class="rclist clearfix">
+                <ul>
+                    <li class="lhover moder-l">
+                        <a class="alink" href="#">
+                            <div class="img-show"><img src="./images/icon1.png" alt="" /></div>
+                            <div class="cdesc">
+                                <h4>Think PHP 5.0 博客系统实战项目演练</h4>
+                                <p>
+                                    <strong class="grade">高级</strong>
+                                    <span><i>•</i><em class="number">1125</em>人在学习</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="lhover moder-l">
+                        <div class="img-show"><img src="./images/icon2.png" alt="" /></div>
+                            <div class="cdesc">
+                                <h4>Android 网络图片加载框架详解</h4>
+                                <p>
+                                    <strong class="grade">高级</strong>
+                                    <span><i>•</i><em class="number">1125</em>人在学习</span>
+                                </p>
+                            </div>
+                    </li>
+                    <li class="lhover moder-l">
+                        <div class="img-show"><img src="./images/icon3.png" alt="" /></div>
+                            <div class="cdesc">
+                                <h4>Angular 2 最新框架+主流技术+项目实战  </h4>
+                                <p>
+                                    <strong class="grade">高级</strong>
+                                    <span><i>•</i><em class="number">1125</em>人在学习</span>
+                                </p>
+                            </div>
+                    </li>
+                    <li class="lhover moder-l">
+                        <div class="img-show"><img src="./images/icon4.png" alt="" /></div>
+                            <div class="cdesc">
+                                <h4>Android Hybrid APP开发实战 H5+原生！  </h4>
+                                <p>
+                                    <strong class="grade">高级</strong>
+                                    <span><i>•</i><em class="number">1125</em>人在学习</span>
+                                </p>
+                            </div>
+                    </li>
+                    <li class="lhover moder-l">
+                        <div class="img-show"><img src="./images/icon4.png" alt="" /></div>
+                            <div class="cdesc">
+                                <h4>Android Hybrid APP开发实战 H5+原生！  </h4>
+                                <p>
+                                    <strong class="grade">高级</strong>
+                                    <span><i>•</i><em class="number">1125</em>人在学习</span>
+                                </p>
+                            </div>
+                    </li>
+                    <li class="lhover moder-l">
+                        <div class="img-show"><img src="./images/icon1.png" alt="" /></div>
+                            <div class="cdesc">
+                                <h4>Think PHP 5.0 博客系统实战项目演练</h4>
+                                <p>
+                                    <strong class="grade">高级</strong>
+                                    <span><i>•</i><em class="number">1125</em>人在学习</span>
+                                </p>
+                            </div>
+                    </li>
+                    <li class="lhover moder-l">
+                        <div class="img-show"><img src="./images/icon2.png" alt="" /></div>
+                            <div class="cdesc">
+                                <h4>Android 网络图片加载框架详解</h4>
+                                <p>
+                                    <strong class="grade">高级</strong>
+                                    <span><i>•</i><em class="number">1125</em>人在学习</span>
+                                </p>
+                            </div>
+                    </li>
+                    <li class="lhover moder-l">
+                        <div class="img-show"><img src="./images/icon3.png" alt="" /></div>
+                            <div class="cdesc">
+                                <h4>Angular 2 最新框架+主流技术+项目实战  </h4>
+                                <p>
+                                    <strong class="grade">高级</strong>
+                                    <span><i>•</i><em class="number">1125</em>人在学习</span>
+                                </p>
+                            </div>
+                    </li>
+                    <li class="lhover moder-l">
+                        <div class="img-show"><img src="./images/icon4.png" alt="" /></div>
+                            <div class="cdesc">
+                                <h4>Android Hybrid APP开发实战 H5+原生！  </h4>
+                                <p>
+                                    <strong class="grade">高级</strong>
+                                    <span><i>•</i><em class="number">1125</em>人在学习</span>
+                                </p>
+                            </div>
+                    </li>
+                    <li class="lhover moder-l">
+                        <div class="img-show"><img src="./images/icon4.png" alt="" /></div>
+                            <div class="cdesc">
+                                <h4>Android Hybrid APP开发实战 H5+原生！  </h4>
+                                <p>
+                                    <strong class="grade">高级</strong>
+                                    <span><i>•</i><em class="number">1125</em>人在学习</span>
+                                </p>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 精品推荐-end -->
+    <!-- 底部-start -->
+    <div class="footer">
+        <div class="fcontent container clearfix">
+            <div class="lfooter fl">
+                <a href="#" class="sprite-bg flogo">学成在线</a>
+                <p>学成在线致力于普及中国最好的教育它与中国一流大学和机构合作提供在线课程。<br />© 2017年XTCG Inc.保留所有权利。-沪ICP备15025210号</p>
+                <a href="#" class="app-d">下载APP</a>
+            </div>
+            <div class="rfooter fr">
+                <dl>
+                    <dt>关于学成网</dt>
+                    <dd><a href="#">关于</a></dd>
+                    <dd><a href="#">管理团队</a></dd>
+                    <dd><a href="#">工作机会</a></dd>
+                    <dd><a href="#">客户服务</a></dd>
+                    <dd><a href="#">帮助</a></dd>
+                </dl>
+                <dl>
+                    <dt>新手指南</dt>
+                    <dd><a href="#">如何注册</a></dd>
+                    <dd><a href="#">如何选课</a></dd>
+                    <dd><a href="#">如何拿到毕业证</a></dd>
+                    <dd><a href="#">学分是什么</a></dd>
+                    <dd><a href="#">考试未通过怎么办</a></dd>
+                </dl>
+                <dl>
+                    <dt>合作伙伴</dt>
+                    <dd><a href="#">合作机构</a></dd>
+                    <dd><a href="#">合作导师</a></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <!-- 底部-end -->
+</body>
+
+</html>

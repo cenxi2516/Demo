@@ -1,0 +1,225 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    font-family: "Arail", "Microsoft YaHei";
+    font-size:12px;
+}
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+.cl{
+    clear:both;
+}
+.h30{
+    height:30px;
+}
+.h39{
+    height:39px;
+}
+.wp{
+    width:1201px;
+    margin:0 auto;
+}
+.header{
+    height:39px;
+    border-bottom:1px solid #B2C3CE;
+    background:#055C92;
+    color:#fff;
+    line-height:39px;
+}
+.nav{
+    height:53px;
+    padding-bottom:30px;
+}
+.nav h2{
+    height:53px;
+    width:166px;
+    background:url("../images/logo.png") no-repeat;
+    margin-right:66px;
+}
+.nav h2 a{
+    display:block;
+    line-height:53px;
+    text-indent:-888em;
+}
+.nav ul{
+    list-style:none;
+}
+.nav ul li{
+    float:left;
+    line-height:53px;
+    margin-right:25px;
+}
+.nav ul li a{
+    text-decoration:none;
+    color:#333;
+    font-size:16px;
+}
+.banner{
+    height:401px;
+}
+.banner .banner-left{
+    height:401px;
+    width:959px;
+    background:url("../images/banner.jpg") no-repeat left bottom;
+}
+.banner .bl-top{
+    width:958px;
+    height:1px;
+    _font-size:0;
+    background:linear-gradient(#0E162D,#446392,#5BA5C2);
+}
+.banner .bl-right{
+    width:1px;
+    height:399px;
+    background:linear-gradient(#59A3C0,#7AC0CC,#8DC9D3);
+}
+.banner .banner-info{
+    width:232px;
+    height:401px;
+
+}
+.banner .banner-info .bi-top{
+    height:45px;
+    background:#055C92;
+    line-height:45px;
+    text-align:center;
+    color:#fff;
+    font-size:16px;
+    font-weight:normal;
+}
+.banner .banner-info ul{
+    list-style:square;
+    padding:14px;
+    padding-left:20px;
+    border-top:1px solid #E0E0E0;
+    border-right:1px solid #E0E0E0;
+    background:#F9F9F9;
+}
+.banner .banner-info ul li a{
+    line-height:36px;
+    font-size:12px;
+    text-decoration:none;
+    color:#333;
+}
+.product{
+    height:350px;
+    background:#F3F3F3;
+    padding-top:51px;
+    padding-bottom:106px;
+}
+.product .product-left{
+    width:232px;
+    height:350px;
+    background:url("../images/r2_c2.png") no-repeat;
+    margin-right:10px;
+}
+.product .product-left a{
+    display:block;
+    height:350px;
+    text-indent:-888em;
+}
+.product .product-left a:hover{
+    background:url("../images/web.png") no-repeat 43px 115px;
+}
+.product .product-right ul{
+    list-style:none;
+
+}
+.product .product-right ul li{
+    float:left;
+    width:232px;
+    height:130px;
+    text-align:center;
+    background:#fff;
+    margin:0px 10px 10px 0px;
+    padding-top:40px;
+}
+.product .product-right ul li.mr0{
+    margin-right:0;
+}
+.product .product-right ul li h3{
+    font-weight:normal;
+    font-size:14px;
+    line-height:66px;
+}
+.product .product-right ul li h3 a{
+    text-decoration:none;
+    color:#333;
+}
+.product .product-right ul li img{
+    height:64px;
+}
+.product .product-right ul li:hover{
+    box-shadow:2px 2px rgba(0,0,0,0.1);
+}
+.footer{
+    height:375px;
+    padding-top:42px;
+    padding-bottom:68px;
+}
+.footer .pl11{
+    padding-left:11px;
+    padding-right:10px;
+}
+.footer .footer-top{
+    height:159px;
+    border-bottom:1px solid #E6E6E6;
+}
+.footer .footer-top dl{
+    float:left;
+    width:171px;
+}
+.footer .footer-top dl.w175{
+    width:175px;
+}
+.footer .footer-top dl dt{
+    line-height:38px;
+    font-size:14px;
+    color:#333;
+}
+.footer .footer-top dl dd a{
+    display:block;
+    text-decoration:none;
+    color:#8D8D8D;
+    line-height:24px;
+}
+.footer .footer-center {
+    height: 116px;
+    padding-top: 22px;
+    border-bottom: 1px solid #E6E6E6;
+}
+.footer .footer-center span{
+    line-height:36px;
+    font-size:14px;
+    color:#333;
+}
+.footer .footer-center .yqlj a{
+    text-decoration:none;
+    color:#8D8D8D;
+    margin-right:7px;
+    font-size:12px;
+    line-height:26px;
+}
+.footer .footer-bottom{
+    height:46px;
+    padding-top:30px;
+}
+.footer .footer-bottom p{
+    margin-right:20px;
+}
+.footer .footer-bottom img{
+    width:145px;
+    height:46px;
+}
+.footer .footer-bottom .address{
+    width:641px;
+    height:46px;
+    line-height:23px;
+    color:#333;
+}

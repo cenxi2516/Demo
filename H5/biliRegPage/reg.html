@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页面</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/reg.css">
+    <base target="_blank">
+</head>
+
+<body>
+<form class="reg-form-wrap">
+    <fieldset class="reg-area">
+        <legend class="title">注册</legend>
+        <div class="form-area">
+            <div class="form-item has-error">
+                <label>
+                    <input type="text" name="count" placeholder="账号">
+                </label>
+                <span class="error">该昵称已被他人使用</span>
+            </div>
+            <div class="form-item">
+                <label>
+                    <input type="password" name="pwd" disabled placeholder="密码（6-16个字符组成，区分大小写）" minlength="6" maxlength="16">
+                </label>
+                <span class="error">密码强度不够</span>
+            </div>
+            <div class="form-item">
+                <div class="tel-area clearfix">
+                    <div class="tel-select hide">
+                        <div class="current-country-area">中国大陆</div>
+                        <ul class="all-country-area">
+                            <li class="country-area-item" data-value="01">Lorem.</li>
+                            <li class="country-area-item" data-value="02">Corrupti.</li>
+                            <li class="country-area-item" data-value="03">Facilis.</li>
+                            <li class="country-area-item checked" data-value="04">中国大陆</li>
+                            <li class="country-area-item" data-value="05">Quae.</li>
+                            <li class="country-area-item" data-value="06">At.</li>
+                            <li class="country-area-item" data-value="07">Repudiandae.</li>
+                            <li class="country-area-item" data-value="08">Dicta?</li>
+                            <li class="country-area-item" data-value="09">Explicabo?</li>
+                            <li class="country-area-item" data-value="10">Beatae?</li>
+                            <li class="country-area-item" data-value="11">Tempore.</li>
+                            <li class="country-area-item" data-value="12">Autem.</li>
+                            <li class="country-area-item" data-value="13">Dolorem.</li>
+                            <li class="country-area-item" data-value="14">Soluta?</li>
+                            <li class="country-area-item" data-value="15">Molestias?</li>
+                            <li class="country-area-item" data-value="16">Itaque?</li>
+                            <li class="country-area-item" data-value="17">Asperiores.</li>
+                            <li class="country-area-item" data-value="18">Repellendus.</li>
+                            <li class="country-area-item" data-value="19">Iusto?</li>
+                            <li class="country-area-item" data-value="20">Facilis.</li>
+                        </ul>
+                    </div>
+                    <div class="input">
+                        <label>
+                            <input type="tel" name="tel" placeholder="填写常用手机号">
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-item">
+                <label>
+                    <input class="msg-verify" type="text" name="msg-verify" placeholder="请输入短信验证码">
+                </label>
+                <button class="btn-send" type="button">点击获取</button>
+            </div>
+            <div class="readme">
+                <label class="checkbox-item">
+                    <input type="checkbox" name="agreement" value="1">
+                    <span class="checkbox"></span>
+                    <span class="txt">我已同意</span>
+                    <a href="#" class="link">《哔哩哔哩弹幕网用户使用协议》</a>
+                    <span class="txt">和</span>
+                    <a href="#" class="link">《哔哩哔哩弹幕网账号中心规范》</a>
+                </label>
+            </div>
+            <div class="form-item">
+                <button class="btn-register btn-fill" type="button">注册</button>
+            </div>
+            <div class="readme txt-right">
+                <a href="#" class="link">已有账号，直接登录&gt;</a>
+            </div>
+        </div>
+    </fieldset>
+</form>
+</body>
+
+</html>

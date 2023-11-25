@@ -1,0 +1,54 @@
+@charset"UTF-8";
+body, ul, li, p, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+img {
+	border: none;
+	vertical-align: top;
+}
+
+.wc {
+	width: 1077px;
+	margin: 0 auto;
+}
+.colorred {
+	color: #f05445;
+}
+.clearfix::before,.clearfix::after {
+	content: "";
+	display: table;
+}
+.clearfix::after {
+	clear: both;
+}
+.clearfix {
+	*zoom: 1;/*兼容IE6、7*/
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.text2em {
+	text-indent: 2em;
+} 
+.paddb25 {
+	padding-bottom: 25px;
+}
+.colorb9 {
+	color: #b9b9b9;
+}
+.lineh18 {
+	line-height: 18px;
+}
+.overhidd {
+	overflow: hidden;
+}

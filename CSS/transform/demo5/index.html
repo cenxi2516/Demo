@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .desc {
+            color: #666;
+            font-size: 14px;
+            text-align: center;
+            margin: 1em 0;
+        }
+
+        .menu-container {
+            width: 200px;
+            margin: 50px auto;
+            background: #434a50;
+            color: #fff;
+            line-height: 1.5;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .menu .menu-title {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .sub-menu {
+            background: #565c63;
+            overflow: hidden;
+            transition: .5s ease-in-out;
+        }
+
+        .sub-menu .menu-item {
+            font-size: 14px;
+            padding: 8px 0 8px 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="desc">本效果需要用到JS</p>
+    <p class="desc">
+        因为如果高度为auto，无法产生过渡效果，必须通过一些特别的技巧才能解决
+    </p>
+    <div class="menu-container">
+        <div class="menu">
+            <div class="menu-title">菜单1</div>
+            <ul class="sub-menu">
+                <li class="menu-item">菜单1-1</li>
+                <li class="menu-item">菜单2-2</li>
+                <li class="menu-item">菜单3-3</li>
+                <li class="menu-item">菜单4-4</li>
+            </ul>
+        </div>
+        <div class="menu">
+            <div class="menu-title">菜单2</div>
+            <ul class="sub-menu">
+                <li class="menu-item">菜单2-1</li>
+                <li class="menu-item">菜单2-2</li>
+                <li class="menu-item">菜单2-3</li>
+                <li class="menu-item">菜单2-4</li>
+            </ul>
+        </div>
+        <div class="menu">
+            <div class="menu-title">菜单3</div>
+            <ul class="sub-menu">
+                <li class="menu-item">菜单3-1</li>
+                <li class="menu-item">菜单3-2</li>
+                <li class="menu-item">菜单3-3</li>
+                <li class="menu-item">菜单3-4</li>
+            </ul>
+        </div>
+        <div class="menu">
+            <div class="menu-title">菜单4</div>
+            <ul class="sub-menu">
+                <li class="menu-item">菜单4-1</li>
+                <li class="menu-item">菜单4-2</li>
+                <li class="menu-item">菜单4-3</li>
+                <li class="menu-item">菜单4-4</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        const oSubmenus = [...document.querySelectorAll('.sub-menu')];
+        const oMenuContainer = document.querySelector('.menu-container');
+        oSubmenus.forEach(dom => {
+            dom.dataset.height = dom.offsetHeight;
+            dom.dataset.show = 'false';
+            dom.style.height = 0;
+        });
+
+        const toggoleSubmenu = submenDom => {
+            if (!submenDom) return;
+
+            const showValue = submenDom.dataset.show;
+            if (showValue === 'false') {
+                submenDom.style.height = submenDom.dataset.height + 'px';
+                submenDom.dataset.show = 'true';
+                return;
+            }
+
+            if (showValue === 'true') {
+                submenDom.style.height = 0;
+                submenDom.dataset.show = 'false';
+                return;
+            }
+        };
+
+        let currrentShowSubmenu = null;
+        oMenuContainer.addEventListener('click', (e) => {
+            const targetDom = e.target;
+            if (targetDom.classList.contains('menu-title')) {
+                const submenDom = targetDom.nextElementSibling;
+                const isClickDiffSame = currrentShowSubmenu !== submenDom;
+
+                isClickDiffSame && toggoleSubmenu(currrentShowSubmenu);
+                toggoleSubmenu(submenDom);
+                currrentShowSubmenu = isClickDiffSame ? submenDom : null;
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+/* 原子类开始 */
+a:hover {
+    color: #fff;
+    background-color: #37a;
+}
+
+a.not-hover:hover {
+    background-color: transparent;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.txt-right {
+    text-align: right;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.txt-left {
+    text-align: left;
+}
+
+.mb25 {
+    margin-bottom: 25px;
+}
+
+.mb30 {
+    margin-bottom: 30px;
+}
+
+.stxt-overflow-ellipsis {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+}
+
+/* 原子类结束 */
+
+/* 字体图标开始 */
+@font-face {
+    font-family: "iconfont";
+    src: url('./../fonts/iconfont.woff2') format('woff2'),
+        url('./../fonts/iconfont.woff') format('woff'),
+        url('./../fonts/iconfont.ttf') format('truetype');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 12px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-video::before {
+    content: "\e600";
+}
+
+.icon-article::before {
+    content: "\e621";
+}
+
+.icon-audio::before {
+    content: "\e695";
+}
+
+.icon-weixinmw::before {
+    content: "\e617";
+}
+
+.icon-erweima::before {
+    content: "\e642";
+}
+
+.icon-sousuo::before {
+    content: "\e8ba";
+}
+
+.icon-weibo::before {
+    content: "\e636";
+}
+
+/* 字体图标结束 */

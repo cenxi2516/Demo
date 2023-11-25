@@ -1,0 +1,58 @@
+:root {
+	--wp: 800px;
+	--h1-font-size: 28px;
+	--h2-font-size: 24px;
+	--h3-font-size: 16px;
+	--normal-font-size: 14px;
+	--h2-bottom-border-color: #ccc;
+	--normal-text-color: #333;
+	--small-title-color: #888;
+	--primary-color: #0ea5e9;
+	--skill-bg-color: #f0fdff;
+	--skill-border-color: #d5f7fd;
+	--normal-bg-color: #22d3ee;
+	--section-gap: 20px;
+	--project-gap: 30px;
+	--h2-gap: 10px;
+
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 100%;
+	font-style: normal;
+}
+
+body {
+	font-size: var(--normal-font-size);
+	line-height: 1.5;
+	letter-spacing: 1px;
+	color: var(--normal-text-color);
+}
+
+h1 {
+	font-size: var(--h1-font-size);
+}
+
+h2 {
+	font-size: var(--h2-font-size);
+	padding: var(--h2-gap) 0;
+	border-bottom: 1px solid var(--h2-bottom-border-color);
+	margin-bottom: var(--section-gap);
+}
+
+h3 {
+	font-size: var(--h3-font-size);
+	margin: 10px 0;
+}
+
+p {
+	margin: 1em 0;
+}
+
+a {
+	text-decoration: none;
+	color: var(--primary-color);
+}

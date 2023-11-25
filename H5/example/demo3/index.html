@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+        	text-align: center;
+      	}
+
+      	.video-wrapper video {
+        	width: 80%;
+        	object-fit: cover;
+      	}
+
+      	.controls-wrapper {
+      		display: none;
+      	}
+
+      	.controls {
+        	margin: 1em 0;
+      	}
+
+      	.active {
+        	background: #ffbd80;
+      	}
+    </style>
+</head>
+
+<body>
+    <div class="video-wrapper">
+    	<video src="https://media.w3.org/2010/05/sintel/trailer.mp4"></video>
+    </div>
+    <div class="controls-wrapper">
+        <div class="controls">
+            <button id="btnPlay">播放/暂停</button>
+        </div>
+        <div class="controls">
+            进度：
+            <input type="range" id="progress" min="0" max="100" value="0" />
+            <span id="current">current</span>
+            /
+            <span id="total">total</span>
+        </div>
+        <div class="controls" id="rate">
+            播放速率：
+            <button data-rate="0.5">0.5倍</button>
+            <button data-rate="0.75">0.75倍</button>
+            <button data-rate="1">1倍</button>
+            <button data-rate="1.25">1.25倍</button>
+            <button data-rate="1.5">1.5倍</button>
+        </div>
+        <div class="controls" >
+            音量：
+            <input type="range" id="volume-range" min="0" max="100" value="50" />
+            <span id="percentage">50%</span>
+        </div>
+        <div class="controls">
+            <button id="save">保存设置</button>
+            <button id="load">加载设置</button>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
