@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "strictNullChecks": true,
+        "strictPropertyInitialization": true,
+        "removeComments": true,
+        "moduleResolution": "Node",
+        "skipLibCheck": true,
+        "target": "ESNext",
+        "module": "CommonJS",
+        "lib": [
+            "ESNext"
+        ],
+        "outDir": "./dist",
+        "noEmitOnError": true,
+        "esModuleInterop": true
+    },
+    "include": [
+        "./src"
+    ]
+}

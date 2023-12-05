@@ -1,0 +1,23 @@
+.chess-game {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.title, .restart-btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.title {
+    top: 15vh;
+}
+
+.restart-btn {
+    width: 100px;
+    bottom: 25vh;
+    line-height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
