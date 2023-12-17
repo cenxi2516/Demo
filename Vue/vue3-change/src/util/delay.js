@@ -1,0 +1,1 @@
+export default (duration = 200) => new Promise( (resolve) => setTimeout(resolve, duration));
