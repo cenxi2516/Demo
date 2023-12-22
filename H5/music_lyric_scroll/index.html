@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        body {
+            background-color: #000;
+            color: #666;
+            text-align: center;
+        }
+
+        audio {
+            width: 500px;
+            margin-top: 10px;
+        }
+
+        .lyric-wrapper {
+            height: 420px;
+            margin-top: 30px;
+            overflow: hidden;
+        }
+
+        .lyric-list {
+            transition: .5s;
+        }
+
+        .lyric-item {
+            height: 30px;
+            line-height: 30px;
+            transition: .2s;
+        }
+
+        .lyric-item.active {
+            color: #fff;
+            transform: scale(1.3);
+        }
+    </style>
+</head>
+
+<body>
+    <audio controls src="./music.mp3"></audio>
+    <div class="lyric-wrapper">
+        <ul class="lyric-list"></ul>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
