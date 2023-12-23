@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+.select-wrapper {
+    display: inline-flex;
+    position: relative;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    margin: 0 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.select-wrapper .iconarrow-up {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    font-size: 10px;
+    color: #666;
+    transform: translateY(-50%);
+    transition: .25s;
+}
+
+.select-wrapper .title {
+    color: #666;
+}
+
+.select-wrapper .select-list {
+    position: absolute;
+    left: 0;
+    top: calc(100% + 12px);
+    min-width: 100%;
+    max-height: 300px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    grid-template-rows: repeat(auto-fit, 20px);
+    gap: 6px 26px;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .5);
+    border-radius: 5px;
+    transform-origin: center top;
+    transform: scaleY(0);
+    transition: .25s;
+    opacity: 0;
+}
+
+.select-wrapper .select-list::before {
+    position: absolute;
+    left: 70px;
+    top: -6px;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    transform: rotate(45deg);
+    border-right: none;
+    border-bottom: none;
+}
+
+.select-wrapper .select-list .option-item {
+    padding: 3px 6px;
+    border-radius: 5px;
+}
+
+.select-wrapper.disabled {
+    cursor: not-allowed;
+}
+
+.select-wrapper.disabled .title {
+    color: #e1e3e1;
+}
+
+.select-wrapper.disabled .iconarrow-up {
+    color: #ccc;
+}
+
+.select-wrapper.disabled .select-list .option-item.selected {
+    background-color: #fff;
+}
+
+.select-wrapper.expand {
+    cursor: pointer;
+}
+
+.select-wrapper.expand .title {
+    color: #666;
+}
+
+.select-wrapper.expand .iconarrow-up {
+    color: #666;
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.select-wrapper.expand .select-list {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+.select-wrapper.expand .select-list .option-item.selected {
+    background-color: #eec05a;
+}
