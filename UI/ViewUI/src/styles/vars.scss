@@ -1,0 +1,76 @@
+$colors: (
+  primary: #4094ff,
+  success: #67c23a,
+  warning: #e6a23c,
+  danger: #f56c6c,
+  info: #909399
+);
+
+:root {
+  // 主色 + 辅助色
+  @each $val, $color in $colors {
+    --view-ui-color-#{$val}: #{$color};
+
+    @for $i from 1 through 4 {
+      --view-ui-color-#{$val}-light-#{2 * $i + 1}: #{mix(#fff, $color, ((2 * $i + 1) * 10 * 1%))};
+    }
+
+    --view-ui-color-#{$val}-light-8: #{mix(#fff, $color, 80 * 1%)};
+    --view-ui-color-#{$val}-dark-2: #{mix(#000, $color, 20 * 1%)};
+  }
+
+  // 中性色
+  --view-ui-color-white: #fff;
+  --view-ui-color-black: #000;
+  --view-ui-bg-color: #ffffff;
+  --view-ui-bg-color-page: #f2f3f5;
+  --view-ui-bg-color-overlay: #ffffff;
+  --view-ui-text-color-primary: #303133;
+  --view-ui-text-color-regular: #606266;
+  --view-ui-text-color-secondary: #909399;
+  --view-ui-text-color-placeholder: #a8abb2;
+  --view-ui-text-color-disabled: #c0c4cc;
+  --view-ui-border-color: #dcdfe6;
+  --view-ui-border-color-light: #e4e7ed;
+  --view-ui-border-color-lighter: #ebeef5;
+  --view-ui-border-color-extra-light: #f2f6fc;
+  --view-ui-border-color-dark: #d4d7de;
+  --view-ui-border-color-darker: #cdd0d6;
+  --view-ui-fill-color: #f0f2f5;
+  --view-ui-fill-color-light: #f5f7fa;
+  --view-ui-fill-color-lighter: #fafafa;
+  --view-ui-fill-color-extra-light: #fafcff;
+  --view-ui-fill-color-dark: #ebedf0;
+  --view-ui-fill-color-darker: #e6e8eb;
+  --view-ui-fill-color-blank: #ffffff;
+
+  // 和 border 相关的变量
+  --view-ui-border-width: 1px;
+  --view-ui-border-style: solid;
+  --view-ui-border-color-hover: var(--view-ui-text-color-disabled);
+  --view-ui-border: var(--view-ui-border-width) var(--view-ui-border-style) var(--view-ui-border-color);
+  --view-ui-border-radius-base: 4px;
+  --view-ui-border-radius-small: 2px;
+  --view-ui-border-radius-round: 20px;
+  --view-ui-border-radius-circle: 100%;
+
+  // 和 font 相关的变量
+  --view-ui-font-size-extra-large: 20px;
+  --view-ui-font-size-large: 18px;
+  --view-ui-font-size-medium: 16px;
+  --view-ui-font-size-base: 14px;
+  --view-ui-font-size-small: 13px;
+  --view-ui-font-size-extra-small: 12px;
+  --view-ui-font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', '\5fae\8f6f\96c5\9ed1', Arial, sans-serif;
+  --view-ui-font-weight-primary: 500;
+
+  // 和 disabled 相关的变量
+  --view-ui-disabled-bg-color: var(--view-ui-fill-color-light);
+  --view-ui-disabled-text-color: var(--view-ui-text-color-placeholder);
+  --view-ui-disabled-border-color: var(--view-ui-border-color-light);
+
+  // 和 transition 过渡相关的变量
+  --view-ui-transition-duration: 0.3s;
+  --view-ui-transition-duration-fast: 0.2s;
+}
