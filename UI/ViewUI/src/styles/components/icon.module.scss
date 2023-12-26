@@ -1,0 +1,16 @@
+.view-icon {
+  --view-icon-color: inherit;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  fill: currentColor;
+  color: var(--view-icon-color);
+  font-size: inherit;
+}
+
+@each $val in primary, success, warning, danger, info {
+  .view-icon-#{$val} {
+    --view-icon-color: var(--view-ui-color-#{$val});
+  }
+}
