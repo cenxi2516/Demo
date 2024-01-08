@@ -1,35 +1,33 @@
 # ViewUI
 
-This template should help get you started developing with Vue 3 in Vite.
+## 图标组件
 
-## Recommended IDE Setup
+fonawesome官网：https://fontawesome.com/
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+### 用户如何使用
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-pnpm install
+```vue
+<view-icon icon="user-secret" />
+<view-icon icon="bars" />
+<view-icon icon="shield-halved" />
 ```
 
-### Compile and Hot-Reload for Development
+### 支持的属性
 
-```sh
-pnpm dev
-```
+| 属性名       | 作用             | 类型                      | 是否必须 | 默认值 |
+| ------------ | ---------------- | ------------------------- | -------- | ------ |
+| icon         | 设置图标         | String                    | 是       | 无     |
+| size         | 图标大小         | String                    | 否       | 无     |
+| rotation     | 旋转             | [String, Number]          | 否       | 无     |
+| flip         | 翻转             | [String, Number, Boolean] | 否       | 无     |
+| beat         | beat动画         | Boolean                   | 否       | 无     |
+| beat-fade    | beat-fade动画    | Boolean                   | 否       | 无     |
+| bounce       | bounce动画       | Boolean                   | 否       | 无     |
+| fade         | fade动画         | Boolean                   | 否       | 无     |
+| shake        | shake动画        | Boolean                   | 否       | 无     |
+| spin         | spin动画         | Boolean                   | 否       | 无     |
+| spin-reverse | spin-reverse动画 | Boolean                   | 否       | 无     |
+| spin-pulse   | spin-pulse动画   | Boolean                   | 否       | 无     |
+| type         | 主题类型         | String                    | 否       | 无     |
+| color        | 自定义颜色       | String                    | 否       | 无     |
 
-### Compile and Minify for Production
-
-```sh
-pnpm build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-pnpm lint
-```
